@@ -5,7 +5,9 @@ RSpec.describe 'Units API', type: :request do
     context 'given example' do
       let(:valid_attributes) { { units: 'degree/minute' } }
 
-      before { get '/units/si', params: valid_attributes }
+      before do
+        get '/units/si', params: valid_attributes
+      end
 
       it 'should convert units' do
         expect(json['unit_name']).to eq('rad/s')

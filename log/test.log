@@ -4,3 +4,71 @@
   [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
 Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 12:39:43 -0800
 Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 12:39:43 -0800
+Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 12:49:48 -0800
+Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 12:49:48 -0800
+Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 12:50:12 -0800
+Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 12:50:12 -0800
+Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 12:50:30 -0800
+Processing by UnitsController#si as HTML
+  Parameters: {"units"=>"degree/minute"}
+Completed 204 No Content in 978ms (ActiveRecord: 0.0ms)
+Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 12:50:31 -0800
+Processing by UnitsController#si as HTML
+  Parameters: {"units"=>"degree/minute"}
+Completed 204 No Content in 551ms (ActiveRecord: 0.0ms)
+Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 12:57:51 -0800
+Processing by UnitsController#si as HTML
+  Parameters: {"units"=>"degree/minute"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 12:57:51 -0800
+Processing by UnitsController#si as HTML
+  Parameters: {"units"=>"degree/minute"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 12:58:19 -0800
+Processing by UnitsController#si as HTML
+  Parameters: {"units"=>"degree/minute"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 12:58:19 -0800
+Processing by UnitsController#si as HTML
+  Parameters: {"units"=>"degree/minute"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 13:01:43 -0800
+Processing by UnitsController#si as HTML
+  Parameters: {"units"=>"degree/minute"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 13:01:43 -0800
+Processing by UnitsController#si as HTML
+  Parameters: {"units"=>"degree/minute"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 13:01:57 -0800
+Processing by UnitsController#si as HTML
+  Parameters: {"units"=>"degree/minute"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 13:01:57 -0800
+Processing by UnitsController#si as HTML
+  Parameters: {"units"=>"degree/minute"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 13:20:17 -0800
+Processing by UnitsController#si as HTML
+  Parameters: {"units"=>"degree/minute"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 13:20:17 -0800
+Processing by UnitsController#si as HTML
+  Parameters: {"units"=>"degree/minute"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 13:20:40 -0800
+Processing by UnitsController#si as HTML
+  Parameters: {"units"=>"degree/minute"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 13:20:40 -0800
+Processing by UnitsController#si as HTML
+  Parameters: {"units"=>"degree/minute"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 14:17:34 -0800
+Processing by UnitsController#si as HTML
+  Parameters: {"units"=>"degree/minute"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 14:17:34 -0800
+Processing by UnitsController#si as HTML
+  Parameters: {"units"=>"degree/minute"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
