@@ -33,9 +33,9 @@ The table below denotes valid input & conversion factors for you to implement. E
 | minute        | min    | time        | 60s                |
 | hour          | h      | time        | 3600s              |
 | day           | d      | time        | 86400s             |
-| degree        | °      | Plane angle | (π / 180)rad      |
-|               | '      | Plane angle | (π / 10800)rad    |
-| second        | "      | Plane angle | (π / 648000)rad   |
+| degree        | °      | Plane angle | (π / 180)rad       |
+|               | '      | Plane angle | (π / 10800)rad     |
+| second        | "      | Plane angle | (π / 648000)rad    |
 | hectare       | ha     | area        | 10000 m^2          |
 | litre         | L      | volume      | 0.001 m^3          |
 | tonne         | t      | mass        | 10^3 kg            |

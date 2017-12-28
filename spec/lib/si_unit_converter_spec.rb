@@ -28,7 +28,7 @@ describe SiUnitConverter do
       end
 
       it 'should mark converter as valid' do
-        expect(SiUnitConverter.new(test_string).valid).to be true
+        expect(SiUnitConverter.new(test_string).valid?).to be true
       end
     end
   end
@@ -49,7 +49,7 @@ describe SiUnitConverter do
 
   describe 'invalid unit string' do
     it 'should mark converter as invalid' do
-      expect(SiUnitConverter.new("abcd").valid).to be false
+      expect(SiUnitConverter.new("abcd").valid?).to be false
     end
 
     it 'should not populate attributes for invalid unit string' do

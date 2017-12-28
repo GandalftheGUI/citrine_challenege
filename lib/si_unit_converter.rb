@@ -39,7 +39,7 @@ class SiUnitConverter
     't' => 1000.0,
   }
 
-  attr_accessor :si_unit_string, :input_unit_string, :multiplication_factor, :valid
+  attr_accessor :si_unit_string, :input_unit_string, :multiplication_factor
 
   def initialize(input_unit_string)
     @valid = false
@@ -52,13 +52,17 @@ class SiUnitConverter
 
   #checks that input string contains only acceptable units and symbols
   def self.valid_unit_string?(unit_string)
-    #NOTE: Does not check for balanced parenthesis or doulbe operators (e.g. '**' or '/*')
+    #NOTE: Does not check for balanced parenthesis or double operands (e.g. '**' or '/*')
     #checks if string contains only: { [a-zL] ( ) * / ' " ° }
     return false unless unit_string.count("^a-zL\(\)*\/\"\'°").zero?
     return false if unit_string.empty?
     #checks if unit string only contains the acceptable
     units = unit_string.split(/[\(\)*\/]+/).reject(&:empty?)
     return !units.detect{|unit| UNIT_LOOKUP_TABLE[unit] == nil}
+  end
+
+  def valid?
+    @valid
   end
 
   private
