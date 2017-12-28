@@ -56,7 +56,7 @@ class SiUnitConverter
     #checks if string contains only: { [a-zL] ( ) * / ' " ° }
     return false unless unit_string.count("^a-zL\(\)*\/\"\'°").zero?
     return false if unit_string.empty?
-    #checks if unit string only contains the acceptable
+    #checks if unit string only contains the acceptable units
     units = unit_string.split(/[\(\)*\/]+/).reject(&:empty?)
     return !units.detect{|unit| UNIT_LOOKUP_TABLE[unit] == nil}
   end
