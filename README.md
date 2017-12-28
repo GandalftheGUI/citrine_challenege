@@ -11,7 +11,7 @@ Path:  **/units/si**
 
 ### Examples: ### 
 ```
-“degree”, “degree/minute”, “(degree/(minute\*hectare)) ”,  “ha\*°”
+“degree”, “degree/minute”, “(degree/(minute*hectare)) ”,  “ha*°”
 ```
 
 ## Return a JSON object with two values: ##
