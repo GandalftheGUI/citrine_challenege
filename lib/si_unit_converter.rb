@@ -51,10 +51,10 @@ class SiUnitConverter
   #checks that input string contains only acceptable units and symbols
   def self.valid_unit_string?(unit_string)
     #NOTE: Does not check for balanced parenthesis
-    #checks if string contains only: [a-z] ( ) * /
-    return false unless unit_string.count("^a-z()*\/").zero?
+    #checks if string contains only: [a-z] ( ) * / ' " °
+    return false unless unit_string.count("^a-z()*\/\"\'°").zero?
     #checks if unit string only contains the acceptable
-    units = unit_string.split(/[()*\/]+/).reject(&:blank?)
+    units = unit_string.split(/[()*\/]+/).reject(&:empty?)
     return !units.detect{|unit| UNIT_LOOKUP_TABLE[unit] == nil}
   end
 
