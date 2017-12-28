@@ -5,7 +5,7 @@ Write a web service in one of the following languages:Java, Python, Ruby, JavaSc
 Method:  **GET**
 Path:  **/units/si**
 
-Query parameter:  
+## Query parameter: ##
 **units**: “A string containing any number of SI units multiplied or divided, which might contain parenthesis. Examples: “degree”, “degree/minute”, “(degree/(minute*hectare)) ”,  “ha*°”
 
 Return a JSON object with two values:
@@ -13,7 +13,7 @@ Return a JSON object with two values:
 
   **multiplication_factor** : a floating point number (rounded to 14 decimal places) you can use to convert any input in the original units to the new widely-used SI units. 
 
-Example:
+## Example: ##
 GET "/units/si?units=degree/minute"
 ->
 { “unit_name”: "rad/s", “multiplication_factor”: 0.00029088820867 }
