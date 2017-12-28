@@ -72,3 +72,51 @@ Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 14:17:
 Processing by UnitsController#si as HTML
   Parameters: {"units"=>"degree/minute"}
 Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 17:20:23 -0800
+Processing by UnitsController#si as HTML
+  Parameters: {"units"=>"degree/minute"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 17:20:23 -0800
+Processing by UnitsController#si as HTML
+  Parameters: {"units"=>"degree/minute"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+Started GET "/units/si?units=abcdefg" for 127.0.0.1 at 2017-12-27 17:20:23 -0800
+Processing by UnitsController#si as HTML
+  Parameters: {"units"=>"abcdefg"}
+Completed 400 Bad Request in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 17:20:42 -0800
+Processing by UnitsController#si as HTML
+  Parameters: {"units"=>"degree/minute"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 17:20:42 -0800
+Processing by UnitsController#si as HTML
+  Parameters: {"units"=>"degree/minute"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Started GET "/units/si?units=abcdefg" for 127.0.0.1 at 2017-12-27 17:20:42 -0800
+Processing by UnitsController#si as HTML
+  Parameters: {"units"=>"abcdefg"}
+Completed 400 Bad Request in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 17:21:56 -0800
+Processing by UnitsController#si as HTML
+  Parameters: {"units"=>"degree/minute"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 17:21:56 -0800
+Processing by UnitsController#si as HTML
+  Parameters: {"units"=>"degree/minute"}
+Completed 200 OK in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+Started GET "/units/si?units=abcdefg" for 127.0.0.1 at 2017-12-27 17:21:56 -0800
+Processing by UnitsController#si as HTML
+  Parameters: {"units"=>"abcdefg"}
+Completed 400 Bad Request in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 17:22:22 -0800
+Processing by UnitsController#si as HTML
+  Parameters: {"units"=>"degree/minute"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Started GET "/units/si?units=degree%2Fminute" for 127.0.0.1 at 2017-12-27 17:22:22 -0800
+Processing by UnitsController#si as HTML
+  Parameters: {"units"=>"degree/minute"}
+Completed 200 OK in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+Started GET "/units/si?units=abcdefg" for 127.0.0.1 at 2017-12-27 17:22:22 -0800
+Processing by UnitsController#si as HTML
+  Parameters: {"units"=>"abcdefg"}
+Completed 400 Bad Request in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)

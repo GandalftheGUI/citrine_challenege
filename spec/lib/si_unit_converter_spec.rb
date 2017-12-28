@@ -1,5 +1,4 @@
 require_relative "../../lib/si_unit_converter.rb"
-require 'byebug'
 
 describe SiUnitConverter do
   describe 'valid_unit_string?' do
@@ -27,6 +26,10 @@ describe SiUnitConverter do
       it "should correctly convert the given unit string: '#{test_string}'" do
         expect(SiUnitConverter.new(test_string).si_unit_string).to eq(test_unit_strings[test_string])
       end
+
+      it 'should mark converter as valid' do
+        expect(SiUnitConverter.new(test_string).valid).to be true
+      end
     end
   end
 
@@ -41,6 +44,16 @@ describe SiUnitConverter do
       it "should correctly calculate the multiplication factor for the given unit string: '#{test_string}'" do
         expect(SiUnitConverter.new(test_string).multiplication_factor).to eq(test_unit_strings[test_string])
       end
+    end
+  end
+
+  describe 'invalid unit string' do
+    it 'should mark converter as invalid' do
+      expect(SiUnitConverter.new("abcd").valid).to be false
+    end
+
+    it 'should not populate attributes for invalid unit string' do
+      expect(SiUnitConverter.new("abcd").multiplication_factor).to eq nil
     end
   end
 end 
