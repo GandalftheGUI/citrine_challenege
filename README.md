@@ -14,9 +14,9 @@ Return a JSON object with two values:
   **multiplication_factor** : a floating point number (rounded to 14 decimal places) you can use to convert any input in the original units to the new widely-used SI units. 
 
 ## Example: ##
-GET "/units/si?units=degree/minute"
-->
-{ “unit_name”: "rad/s", “multiplication_factor”: 0.00029088820867 }
+GET "/units/si?units=degree/minute" -> { “unit_name”: "rad/s", “multiplication_factor”: 0.00029088820867 }
+
+## Notes: ##
 The table below denotes valid input & conversion factors for you to implement. Either values from the left 2 columns are valid input, with the exception of ‘minute’: please use only the quote (‘) character to denote plane angle, and reserve “minute” and “min” for time.
 
 
