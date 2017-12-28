@@ -20,23 +20,23 @@ class SiUnitConverter
   }
 
   MULTIPLICATION_FACTOR_LOOKUP_TABLE = {
-    'minute' => 60,
-    'hour' => 3600,
-    'day' => 86400,
+    'minute' => 60.0,
+    'hour' => 3600.0,
+    'day' => 86400.0,
     'degree' => (Math::PI/180),
     'second' => (Math::PI/648000),
-    'hectare' => 10000,
+    'hectare' => 10000.0,
     'litre' => 0.001,
-    'tonne' => 1000,
-    'min' => 60,
-    'h' => 3600,
-    'd' => 86400,
+    'tonne' => 1000.0,
+    'min' => 60.0,
+    'h' => 3600.0,
+    'd' => 86400.0,
     '°' => (Math::PI/180),
     '\'' => (Math::PI/10800),
     '"' => (Math::PI/648000),
-    'ha' => 10000,
+    'ha' => 10000.0,
     'L' => 0.001,
-    't' => 1000,
+    't' => 1000.0,
   }
 
   attr_accessor :si_unit_string, :input_unit_string, :multiplication_factor
@@ -53,7 +53,7 @@ class SiUnitConverter
     #NOTE: Does not check for balanced parenthesis or doulbe operators (e.g. '**' or '/*')
     #checks if string contains only: { [a-zL] ( ) * / ' " ° }
 
-    return false unless unit_string.count("^a-zL()*\/\"\'°").zero?
+    return false unless unit_string.count("^a-zL\(\)*\/\"\'°").zero?
     return false if unit_string.empty?
     #checks if unit string only contains the acceptable
     units = unit_string.split(/[\(\)*\/]+/).reject(&:empty?)
@@ -76,7 +76,9 @@ class SiUnitConverter
     @si_unit_string = convert_string(UNIT_LOOKUP_TABLE)
   end
 
-  #valid chars: ()*0-9
   def build_si_multiplication_factor
+    arithmetic_string = convert_string(MULTIPLICATION_FACTOR_LOOKUP_TABLE)
+    throw "dangerous arithmetic string: '#{arithmetic_string}'" unless arithmetic_string.count("^\(\)/*[0-9].e-").zero?
+    @multiplication_factor = eval(arithmetic_string).round(14)
   end
 end

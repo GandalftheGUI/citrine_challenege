@@ -1,4 +1,5 @@
 require_relative "../../lib/si_unit_converter.rb"
+require 'byebug'
 
 describe SiUnitConverter do
   describe 'valid_unit_string?' do
@@ -25,6 +26,20 @@ describe SiUnitConverter do
     test_unit_strings.keys.each do |test_string|
       it "should correctly convert the given unit string: '#{test_string}'" do
         expect(SiUnitConverter.new(test_string).si_unit_string).to eq(test_unit_strings[test_string])
+      end
+    end
+  end
+
+  describe 'multiplication factor' do
+    test_unit_strings = {
+      'degree/minute' => 0.00029088820867,
+      '(tonne/day)' => 0.01157407407407,
+      '(L*")/min' => 8.08e-11,
+    }
+
+    test_unit_strings.keys.each do |test_string|
+      it "should correctly calculate the multiplication factor for the given unit string: '#{test_string}'" do
+        expect(SiUnitConverter.new(test_string).multiplication_factor).to eq(test_unit_strings[test_string])
       end
     end
   end
