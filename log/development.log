@@ -1,0 +1,28 @@
+Started GET "/units/si?units=degree/minute" for 127.0.0.1 at 2017-12-28 12:12:15 -0800
+Processing by UnitsController#si as */*
+  Parameters: {"units"=>"degree/minute"}
+Completed 500 Internal Server Error in 111ms
+
+
+  
+NameError (uninitialized constant UnitsController::SiUnitConverter):
+  
+app/controllers/units_controller.rb:3:in `si'
+Started GET "/units/si?units=degree/minute" for 127.0.0.1 at 2017-12-28 12:13:05 -0800
+Processing by UnitsController#si as */*
+  Parameters: {"units"=>"degree/minute"}
+Completed 200 OK in 106ms (Views: 0.1ms)
+
+
+Started GET "/units/si?units=degree/minute" for 127.0.0.1 at 2017-12-28 12:13:44 -0800
+Processing by UnitsController#si as */*
+  Parameters: {"units"=>"degree/minute"}
+Completed 200 OK in 0ms (Views: 0.1ms)
+
+
+Started GET "/units/si?units=degree/minuwate" for 127.0.0.1 at 2017-12-28 12:13:52 -0800
+Processing by UnitsController#si as */*
+  Parameters: {"units"=>"degree/minuwate"}
+Completed 400 Bad Request in 0ms (Views: 0.1ms)
+
+
