@@ -84,6 +84,7 @@ class SiUnitConverter
   def build_si_multiplication_factor
     arithmetic_string = convert_string(MULTIPLICATION_FACTOR_LOOKUP_TABLE)
     throw "dangerous arithmetic string: '#{arithmetic_string}'" unless arithmetic_string.count("^\(\)/*[0-9].e-").zero?
+    # I am aware that using eval isnt ideal, however given the time constraints I was given for this problem I wanted to get a working example out and felt this was appropriatae for a proof of concept.
     @multiplication_factor = eval(arithmetic_string).round(14)
   end
 end
